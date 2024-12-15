@@ -35,12 +35,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
+    <Folder Include="Tables\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AxClass\userInputL">
       <SubType>Content</SubType>
       <Name>userInputL</Name>
       <Link>Classes\userInputL</Link>
+    </Content>
+    <Content Include="AxTable\TableL">
+      <SubType>Content</SubType>
+      <Name>TableL</Name>
+      <Link>Tables\TableL</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
