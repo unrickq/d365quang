@@ -15,6 +15,8 @@
     <ProjectGuid>{431ab5be-69f2-4298-970e-8857f5cd2702}</ProjectGuid>
     <Name>d365quang</Name>
     <RootNamespace>d365quang</RootNamespace>
+    <StartupObject>userInputL</StartupObject>
+    <StartupType>Class</StartupType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
@@ -31,6 +33,16 @@
     <DebugSymbols>true</DebugSymbols>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\userInputL">
+      <SubType>Content</SubType>
+      <Name>userInputL</Name>
+      <Link>Classes\userInputL</Link>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
   <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.17.0.targets" />
 </Project>
